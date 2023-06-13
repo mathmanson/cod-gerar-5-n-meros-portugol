@@ -1,0 +1,25 @@
+//Gerar 5 número de 1 a 100 e colocar em vetor, para cada número
+//pegar seu número e colocar em outro vetor, depois mostrar números sorteados e os dobros
+programa {
+
+
+  inclua biblioteca Util --> u
+
+
+  funcao inicio() {
+    //somente vetores(lista) devem ser declarados no plural
+    inteiro numeros[5], dobros[5]
+
+
+    para(inteiro i = 0; i < 5; i++){
+      numeros[i] = u.sorteia(1, 100)
+      dobros[i] = (numeros[i] * 2)
+    }
+   
+    para(inteiro i = 0; i < 5; i++){
+      escreva(numeros[i], " dobro é: ", dobros[i], ".\n")
+    }
+
+
+  }
+}
